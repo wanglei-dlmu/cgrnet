@@ -1,9 +1,8 @@
 # C<sup>2</sup>LNet
-C<sup>2</sup>LNet:A Causal Contrast Learning Network for Drug Recommendationon
-
+CGRNet: Causal Graph Representation Network for Enhancing Drug Recommendation
 
 ## Overview
-This repository contains code necessary to run C<sup>2</sup>LNet model. C<sup>2</sup>LNet is a causal contrast learning network for drug recommendation, as shown in the following Figure1.The model consists of three components:(1) medical embedding module: extracting symptom and drug information from patient's EHRs and embedding the symptom and drug information using Dual-RNN, respectively; (2)causal contrast learning module:firstly, utilizing attention mechanism to make causal inference, constructing a symptom-drug causal graph. Then the symptom-drug causal graph is randomly augmented to contrast and learn the correlation representation of symptoms and drugs. In this way, the recommendation bias caused by data sparsity problem is eliminated. (3)Message passing module: according to the SMILES sequence, the corresponding drug information is transformed into drug molecular graph. The multiMLP are utilized to compute inter-drug messaging and predict inter-drug side effect scores, thus achieving more accurate and safer drug combination recommendations. 
+This repository contains code necessary to run CGRNet model. CGRNet is a causal graph representation network for enhancing drug recommendation, as shown in the following Figure1. The CGRNet model consists of three components. (1) Medical embedding module: Extracting symptom and drug information from patient's EHRs and embedding the symptom and drug information using Dual-RNN, respectively. (2) Causal contrastive learning module: First, we utilize an attention mechanism to make causal inferences, and consider confounders to construct a symptom-drug causal graph. Then, we integrate symptom-drug causal graph and contrastive learning network to learn the graph representation.  (3) Message passing module: we transform the corresponding drug information into a drug molecular graph according to the SMILES sequence. And then, we design inner-MLP to compute drug-drug messaging and predict DDI scores, thus achieving more accurate and safer drug combination recommendations. Next, we introduce these modules and provide detailed information on CGRNet.recommendations. 
 
 
 ![alt text](model.jpg)
