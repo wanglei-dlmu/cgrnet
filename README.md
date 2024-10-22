@@ -64,11 +64,11 @@ Run **sym_additional.py** to generate additional symptom information used for th
 python sym_additional.py
 ```
 
- ### C<sup>2</sup>LNet Training and Inference
+ ### CGRNet Training and Inference
  ```
 python main.py --model_name [YOUR_MODEL_NAME]
  ```
- ### C<sup>2</sup>LNet Test
+ ### CGRNet Test
  ```
  python main.py
  
