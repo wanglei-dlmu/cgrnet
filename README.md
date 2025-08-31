@@ -64,6 +64,12 @@ Run **sym_additional.py** to generate additional symptom information used for th
 python sym_additional.py
 ```
 
+### Step 5: Generate multi-visit records and DDI adjacency matrix
+Generate **records_final_iii.pkl** and **ddi_A_iii.pkl** by running gen_records_ddi.py.
+```
+python gen_records_ddi.py
+```
+
  ### CGRNet Training and Inference
  ```
 python main.py --model_name [YOUR_MODEL_NAME]
